@@ -139,6 +139,7 @@ ul, p, h2 {
 }
 .none-space-char span {
   color: white;
+  user-select: none;
 }
 
 /*
