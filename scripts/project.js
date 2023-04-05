@@ -136,6 +136,8 @@ $(`#keyboard-wrapper`).find("li").on(`click`, function(e) {
 			if ($(this).text().toLowerCase() === keyPressed.html()) {
 				correctGuess = true;
 
+				$(this).css("opacity", "1");
+
 				keyPressed.css({
 					"opacity": "0.1"
 				});	
