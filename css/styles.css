@@ -1,0 +1,180 @@
+/* 
+	Resetter 
+ */
+ul, p, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+	Applies to whole main 
+ */
+#wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+#main-wrapper {
+  opacity: 0.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 
+	Popup related 
+ */
+#start-popup-wrapper {
+  display: flex;
+}
+
+#win-popup-wrapper {
+  display: none;
+}
+
+#start-popup-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#popup-box {
+  height: 300px;
+  width: 500px;
+  border: solid 10px orange;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px black;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#welcome-text {
+  font-family: "Delicious Handrawn", cursive;
+  color: orange;
+  font-size: 48px;
+  text-align: center;
+}
+
+.start-button-wrapper {
+  display: block;
+  text-align: center;
+  height: 60px;
+}
+
+.start-button-text {
+  display: inline;
+  color: white;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  text-align: center;
+  height: 80px;
+}
+
+/*
+	Left main part: image
+ */
+#hangman-img-wrapper {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+/*
+	Right main part: hint, guess, virtual keyboard
+ */
+#hangman-side-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*
+	Hint related stuff
+ */
+#hint-wrapper {
+  width: 500px;
+  align-self: center;
+}
+
+#hint-text {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10 30 10 30px;
+}
+
+/*
+	Guess related stuff
+ */
+#guess-field-wrapper {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+#answer-field-ul {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+}
+#answer-field-ul li {
+  list-style: none;
+  width: 30px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+.none-space-char {
+  border-bottom: 3px solid;
+}
+.none-space-char span {
+  color: white;
+}
+
+/*
+	Keyboard related stuff
+ */
+#kb-row1 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+#kb-row1 li {
+  list-style-type: none;
+}
+
+#kb-row2 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+#kb-row2 li {
+  list-style-type: none;
+}
+
+#keyboard-wrapper li {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px black;
+  color: orange;
+  cursor: pointer;
+  border: solid 2px orange;
+  font-size: 48px;
+  font-family: "Delicious Handrawn", cursive;
+  list-style: none;
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+}
