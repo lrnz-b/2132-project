@@ -72,8 +72,8 @@ let endFrame = 21;
 function animateHangmanEnd() {
 	if (startFrame < endFrame) {
 		startFrame++;
-		$manImgWrapper.find(`img`).attr(`src`, `images/hang${startFrame}.PNG`);
-		$manImgWrapper.find(`img`).attr(`alt`, `hang${startFrame}.PNG`);
+		$manImgWrapper.find(`img`).attr(`src`, `images/hang${startFrame}.png`);
+		$manImgWrapper.find(`img`).attr(`alt`, `hang${startFrame}.png`);
 		setTimeout(animateHangmanEnd, 30);
 	}
 }

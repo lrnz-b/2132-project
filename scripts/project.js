@@ -51,8 +51,8 @@ let session = new Session();
 
 $manImgWrapper.append(`
 	<div>
-		<img src="images/hang${session.getWrongGuessCount()}.PNG" 
-			 alt="hang${session.getWrongGuessCount()}.PNG"
+		<img src="images/hang${session.getWrongGuessCount()}.png" 
+			 alt="hang${session.getWrongGuessCount()}.png"
 	</div>
 `);
 
@@ -158,8 +158,8 @@ $(`#keyboard-wrapper`).find("li").on(`click`, function(e) {
 			});
 
 			session.wrongGuess();
-			$manImgWrapper.find(`img`).attr(`src`, `images/hang${session.getWrongGuessCount()}.PNG`);
-			$manImgWrapper.find(`img`).attr(`alt`, `hang${session.getWrongGuessCount()}.PNG`);
+			$manImgWrapper.find(`img`).attr(`src`, `images/hang${session.getWrongGuessCount()}.png`);
+			$manImgWrapper.find(`img`).attr(`alt`, `hang${session.getWrongGuessCount()}.png`);
 		} 
 
 		if (correctGuessCount == session.getTrimmedAnswer().length) {
@@ -227,8 +227,8 @@ function resetGame() {
 		$(this).css({"opacity": "1"});	
 	});
 
-	$manImgWrapper.find(`img`).attr(`src`, `images/hang${session.getWrongGuessCount()}.PNG`);
-	$manImgWrapper.find(`img`).attr(`alt`, `hang${session.getWrongGuessCount()}.PNG`);
+	$manImgWrapper.find(`img`).attr(`src`, `images/hang${session.getWrongGuessCount()}.png`);
+	$manImgWrapper.find(`img`).attr(`alt`, `hang${session.getWrongGuessCount()}.png`);
 }
 
 
